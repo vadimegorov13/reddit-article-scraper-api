@@ -1,3 +1,7 @@
+/*
+Package config provides a function FiberConfig that returns a Fiber
+configuration with predefined settings.
+*/
 package config
 
 import (
@@ -6,10 +10,11 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+// The function initializes a new instance of Fiber configuration
 func FiberConfig() fiber.Config {
 
 	fiberConf := fiber.Config{
-		AppName:     "Simple CRM using fiber",
+		AppName:     "Reddit Article Scraper",
 		JSONEncoder: json.Marshal,
 		JSONDecoder: json.Unmarshal,
 	}
